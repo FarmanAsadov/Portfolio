@@ -20,7 +20,6 @@
 
     @include tablet {
       display: block;
-      background-color: #fff;
       border-radius: 2px;
     }
   }
@@ -43,25 +42,149 @@
   }
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-
-  &__logo {
+#main {
+  height: 150vh;
+  .container {
+    height: 18rem;
+    display: flex;
+    justify-content: space-between;
     @include mobile {
-      width: 70%;
+      flex-wrap: wrap;
+    }
+
+    &__logo {
+      @include mobile {
+        width: 70%;
+      }
+    }
+
+    &__left {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 8em;
+      &-h2 {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #ff8303;
+        @include mobile {
+          font-size: 1.5rem;
+        }
+      }
+      &-p {
+        font-size: 1.5rem;
+        @include mobile {
+          font-size: 1rem;
+        }
+      }
+      &-p-small-text {
+        opacity: 0.7;
+        font-size: small;
+        letter-spacing: 2px;
+        @include mobile {
+          font-size: 0.8rem;
+        }
+      }
+      @include mobile {
+        padding: 0 4.5em;
+      }
+    }
+
+    &__right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 20%;
+      padding-right: 20rem;
+      &-img {
+        width: 15rem;
+        @include mobile {
+          width: 12rem;
+        }
+      }
+      @include mobile {
+        width: 100%;
+        padding: 0 4.5rem !important;
+      }
     }
   }
 
-  &__left {
-    color: #fff;
+  .section {
+    .section_div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 3.5rem;
+      color: #fff;
+
+      @include mobile {
+        flex-wrap: wrap !important;
+        padding-top: 2.5rem !important;
+        width: auto !important ;
+      }
+      @include tablet {
+        width: 10rem;
+      }
+      &-p {
+        width: 45rem;
+        letter-spacing: 2px;
+        @include mobile {
+          width: 20rem !important;
+          text-align: justify !important;
+          padding-top: 2.2rem !important;
+        }
+        @include tablet {
+          width: 10rem;
+          text-align: justify;
+          padding-top: 1.5rem;
+        }
+      }
+    }
   }
 
-  &__right {
-    width: 30%;
-    &-img {
-      width: 100%;
-      height: 90%;
+  .section_skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-h2 {
+      padding: 20px 0;
+      color: #ff8303;
+    }
+    &_ul {
+      display: flex;
+      column-gap: 1.5rem;
+      color: #fff;
+      text-align: center;
+      @include mobile {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      @include tablet {
+        flex-direction: column;
+        flex-wrap: wrap !important;
+        justify-content: center;
+      }
+    }
+    &_ul-li {
+      background-color: #21201d;
+      width: 12rem;
+      height: 13.5rem;
+      padding: 30px;
+      border-radius: 8px;
+      @include mobile {
+        margin-bottom: 25px;
+        background-color: #353431;
+      }
+    }
+
+    &_ul-li img,
+    p {
+      background-color: transparent;
     }
   }
 }
