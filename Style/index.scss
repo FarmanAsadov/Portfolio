@@ -14,13 +14,16 @@
   display: flex;
   justify-content: space-between;
   padding: 20px 30px;
+  @include tablet {
+    width: 100%;
+    padding: 10px 30px;
+  }
 
   .menu {
     display: none;
 
-    @include tablet {
-      display: block;
-      border-radius: 2px;
+    @include mobile {
+      display: block !important;
     }
   }
 
@@ -43,13 +46,17 @@
 }
 
 #main {
-  height: 150vh;
+  ////bunu silecem//////
+  @include tablet {
+    height: 170vh;
+  }
+  //////////////////////
   .container {
     height: 18rem;
     display: flex;
     justify-content: space-between;
     @include mobile {
-      flex-wrap: wrap;
+      flex-wrap: wrap !important;
     }
 
     &__logo {
@@ -64,18 +71,32 @@
       flex-direction: column;
       justify-content: center;
       padding: 0 8em;
+      @include mobile {
+        padding: 0 4.5em !important;
+      }
+      @include tablet {
+        padding: 0 0 0 5em;
+      }
+
       &-h2 {
         font-size: 3rem;
         font-weight: bold;
         color: #ff8303;
         @include mobile {
-          font-size: 1.5rem;
+          padding-top: 1.5rem !important;
+          font-size: 1.5rem !important;
+        }
+        @include tablet {
+          font-size: 2.2rem;
         }
       }
       &-p {
         font-size: 1.5rem;
         @include mobile {
-          font-size: 1rem;
+          font-size: 1rem !important;
+        }
+        @include tablet {
+          font-size: 1.2rem;
         }
       }
       &-p-small-text {
@@ -83,30 +104,38 @@
         font-size: small;
         letter-spacing: 2px;
         @include mobile {
+          font-size: 0.8rem !important;
+        }
+        @include tablet {
           font-size: 0.8rem;
         }
-      }
-      @include mobile {
-        padding: 0 4.5em;
       }
     }
 
     &__right {
+      box-sizing: border-box;
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
       width: 20%;
-      padding-right: 20rem;
-      &-img {
-        width: 15rem;
-        @include mobile {
-          width: 12rem;
-        }
-      }
+      padding: 0 15rem;
       @include mobile {
-        width: 100%;
+        width: 100% !important;
         padding: 0 4.5rem !important;
+      }
+      @include tablet {
+        width: 20rem;
+        padding: 0 2.5rem 0 0;
+      }
+      &-img {
+        width: 20rem;
+        @include mobile {
+          width: 12rem !important;
+        }
+        @include tablet {
+          width: 18rem;
+        }
       }
     }
   }
@@ -123,9 +152,10 @@
         flex-wrap: wrap !important;
         padding-top: 2.5rem !important;
         width: auto !important ;
+        height: 340px !important;
       }
       @include tablet {
-        width: 10rem;
+        height: 230px;
       }
       &-p {
         width: 45rem;
@@ -136,9 +166,8 @@
           padding-top: 2.2rem !important;
         }
         @include tablet {
-          width: 10rem;
+          width: 23.5rem;
           text-align: justify;
-          padding-top: 1.5rem;
         }
       }
     }
@@ -152,6 +181,7 @@
 
     &-h2 {
       padding: 20px 0;
+      letter-spacing: 4px;
       color: #ff8303;
     }
     &_ul {
@@ -160,14 +190,13 @@
       color: #fff;
       text-align: center;
       @include mobile {
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-
-      @include tablet {
-        flex-direction: column;
         flex-wrap: wrap !important;
-        justify-content: center;
+        justify-content: center !important;
+      }
+      @include tablet {
+        flex-wrap: wrap !important;
+        row-gap: 2rem !important;
+        justify-content: center !important;
       }
     }
     &_ul-li {
@@ -180,6 +209,10 @@
         margin-bottom: 25px;
         background-color: #353431;
       }
+    }
+    &_ul-li p {
+      padding: 10px;
+      font-weight: bold;
     }
 
     &_ul-li img,
