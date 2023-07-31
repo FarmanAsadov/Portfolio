@@ -46,17 +46,14 @@
 }
 
 #main {
-  ////bunu silecem//////
-  @include tablet {
-    height: 170vh;
-  }
-  //////////////////////
+
   .container {
     height: 18rem;
     display: flex;
     justify-content: space-between;
     @include mobile {
       flex-wrap: wrap !important;
+
     }
 
     &__logo {
@@ -194,9 +191,9 @@
         justify-content: center !important;
       }
       @include tablet {
-        flex-wrap: wrap !important;
-        row-gap: 2rem !important;
-        justify-content: center !important;
+        flex-wrap: wrap;
+        row-gap: 2rem;
+        justify-content: center;
       }
     }
     &_ul-li {
@@ -206,8 +203,8 @@
       padding: 30px;
       border-radius: 8px;
       @include mobile {
-        margin-bottom: 25px;
-        background-color: #353431;
+        margin-bottom: 25px !important;
+        background-color: #353431 !important;
       }
     }
     &_ul-li p {
@@ -218,6 +215,132 @@
     &_ul-li img,
     p {
       background-color: transparent;
+    }
+  }
+  .section_works {
+    &-h2 {
+      padding: 20px 0;
+      letter-spacing: 4px;
+      color: #ff8303;
+      text-align: center;
+    }
+    &-container {
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      justify-content: space-evenly;
+      align-items: center;
+      :nth-child(2) {
+        padding: 0px;
+      }
+      @include mobile {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-self: center !important;
+        align-items: center !important;
+        row-gap: 2.5rem !important;
+      }
+      &-cards {
+        background-color: #353431;
+        width: 22.5%;
+        text-align: center;
+        padding: 30px;
+        height: 300px;
+        padding-bottom: 0;
+        @include mobile {
+          width: 65% !important;
+          height: 240px;
+        }
+        @include tablet {
+          width: 28%;
+        }
+
+        h2 {
+          color: #ff8303;
+          font-weight: normal;
+          background-color: transparent;
+          padding-bottom: 10px;
+          font-size: 2rem;
+          @include tablet {
+            font-size: 1.2rem;
+          }
+        }
+        p {
+          background-color: transparent;
+          letter-spacing: 2px;
+          font-size: 0.9rem;
+          padding: 10px;
+          @include tablet {
+            font-size: 0.7rem;
+          }
+        }
+        hr {
+          border-color: #ff8303;
+          margin-top: 10px;
+        }
+        img {
+          width: 303px;
+          height: 100%;
+          object-fit: cover;
+          padding: 0px;
+          margin: 0px;
+          background: transparent;
+          @include mobile {
+            width: 15.9rem !important;
+            object-fit: cover !important;
+          }
+          @include tablet {
+            width: 100%;
+            object-fit: inherit;
+          }
+        }
+      }
+    }
+  }
+}
+
+#footer {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  justify-content: space-evenly;
+  @include mobile{
+    flex-direction: column;
+    row-gap: 3.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer_container {
+    img {
+      margin-bottom: 15px;
+    }
+    p {
+      width: 150px;
+      letter-spacing: 2px;
+    }
+    h2 {
+      color: #111111;
+      margin-bottom: 15px;
+    }
+  }
+  .footer_container-list {
+    display: flex;
+    column-gap: 2rem;
+    @include mobile{
+      flex-direction: column;
+    }
+
+    ul {
+      flex-direction: column;
+      row-gap: 10rem;
+    }
+    ul li {
+      color: #ff8303;
+    }
+    span {
+      position: relative;
+      top: -20px;
     }
   }
 }
