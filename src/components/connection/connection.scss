@@ -1,0 +1,76 @@
+.connection {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 40px;
+  margin: 0 auto;
+  gap: 30px 0;
+  &-title {
+    color: #fc0;
+    &-point {
+      color: #fff;
+    }
+  }
+  &-description {
+    width: 60%;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+  }
+  &-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px 0;
+    padding-top: 50px;
+
+    &-inp {
+      border: none;
+      border-bottom: 2px solid #fc0;
+      width: 50%;
+      font-size: 20px;
+      outline: none;
+      color: #fff;
+      text-indent: 5px;
+      padding: 0 0 5px 0;
+      &::placeholder {
+        color: #fff;
+      }
+      &:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 30px #000 inset;
+        -webkit-text-fill-color: #fff;
+      }
+    }
+    .textarea {
+      height: 100px;
+      resize: none;
+    }
+    &-btn {
+      padding: 15px;
+      border-radius: 18px;
+      font-size: 17px;
+      border: 2px solid #fc0;
+      color: #fc0;
+      cursor: pointer;
+      transition: 0.5s ease-in-out;
+      font-weight: 600;
+      &:hover {
+        background-color: #fc0 !important;
+        color: #000;
+      }
+    }
+  }
+}
+
+.validations {
+  width: 50%;
+  height: 30px;
+
+  p {
+    color: #fc0;
+    // padding: 5px 0;
+  }
+}

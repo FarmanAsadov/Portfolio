@@ -1,0 +1,9 @@
+@import "../style/_mixins.scss";
+
+.outlet {
+  height: 800px;
+
+  @include mobile {
+    height: 100%;
+  }
+}
