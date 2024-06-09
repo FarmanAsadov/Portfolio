@@ -288,6 +288,30 @@
     font-size: 13.5px !important;
   }
 }
+@media (max-width: 394px) {
+  .info {
+    padding: 100px 20px 50px 20px !important;
+  }
+  .info-image {
+    width: 90% !important;
+  }
+  .ability-second {
+    margin-top: -32px !important;
+  }
+  .ability-fourth {
+    margin-top: -30px !important;
+  }
+
+  .hexagon {
+    width: 35px !important;
+    height: 57px !important;
+    border-radius: 0.25em !important;
+    img {
+      width: 50px;
+    }
+  }
+}
+
 @media (max-width: 365px) {
   .navigate-direction-link {
     font-size: 12.5px !important;
