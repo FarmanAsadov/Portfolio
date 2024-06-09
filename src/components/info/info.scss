@@ -6,6 +6,7 @@
   align-items: center;
   padding: 0px 30px 100px 30px;
   height: 800px;
+
   @include mobile {
     flex-direction: column;
     gap: 40px 0px !important;
@@ -20,45 +21,55 @@
     border-radius: 10px 10px 10px 80px;
     box-shadow: 0px 0px 25px 0px #fc0;
     animation: fadeRight 1s ease;
+
     @include mobile {
       width: 80%;
     }
   }
+
   &-container {
     display: flex;
     justify-content: center;
     background: transparent;
     gap: 40px;
+
     @include mobile {
       flex-direction: column;
       gap: 40px 0px;
     }
+
     &-about {
       width: 70%;
       display: flex;
       flex-direction: column;
       gap: 50px 0px;
+
       @include mobile {
         width: 100%;
         padding: 0 10px;
       }
+
       &-title {
         font-size: 41px;
         border-bottom: 1px solid #fc0;
         animation: fadeDown 1s ease;
+
         @include mobile {
           font-size: 35px;
         }
       }
+
       &-box {
         width: 95%;
         display: flex;
         flex-direction: column;
         gap: 25px 0px;
         font-size: 23px;
+
         @include mobile {
           font-size: 18px;
         }
+
         &-content-first {
           animation: fadeUp 1s ease;
         }
@@ -77,27 +88,33 @@
       gap: 50px 0px;
       padding: 0px 25px;
       width: 20%;
+
       @include mobile {
         width: 100%;
         padding: 0 10px;
       }
+
       &-title {
         font-size: 41px;
         border-bottom: 1px solid #fc0;
         animation: fadeDown 1s ease;
+
         @include mobile {
           font-size: 35px;
         }
       }
+
       &-box {
         width: 95%;
         display: flex;
         flex-direction: column;
         gap: 25px 0px;
         font-size: 23px;
+
         @include mobile {
           font-size: 18px;
         }
+
         &-content-first {
           animation: fadeUp 1s ease;
         }
@@ -111,149 +128,3 @@
     }
   }
 }
-
-// .info {
-//   width: 100%;
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   padding: 0px 30px 100px 30px;
-//   gap: 0px 40px;
-
-//   @include mobile {
-//     flex-direction: column;
-//     gap: 40px 0px !important;
-//     padding: 100px 30px 50px 30px !important;
-//   }
-//   @include tablet {
-//     flex-direction: column;
-//     gap: 40px 0px;
-//     padding: 50px 30px 50px 30px !important;
-//   }
-
-//   &-image {
-//     width: 20%;
-//     height: 370px;
-//     object-fit: cover;
-//     border-radius: 10px 10px 10px 80px;
-//     box-shadow: 0px 0px 25px 0px #fc0;
-//     animation: fadeRight 1s ease;
-//     @include mobile {
-//       width: 80%;
-//     }
-//     @include tablet {
-//       width: 40%;
-//     }
-//   }
-
-//   &-container {
-//     display: flex;
-//     justify-content: center;
-//     background: transparent;
-//     @include mobile {
-//       flex-direction: column;
-//       gap: 40px 0px;
-//     }
-//     @include tablet {
-//       flex-direction: column;
-//       gap: 40px 0px;
-//     }
-
-//     &-about {
-//       width: 90%;
-//       display: flex;
-//       flex-direction: column;
-//       gap: 50px 0px;
-//       padding: 0px 25px;
-//       @include mobile {
-//         width: 100%;
-//         padding: 0 10px;
-//       }
-//       @include tablet {
-//         width: 100%;
-//         padding: 0 10px;
-//       }
-
-//       &-title {
-//         font-size: 41px;
-//         border-bottom: 1px solid #fc0;
-//         animation: fadeDown 1s ease;
-//         @include mobile {
-//           font-size: 35px;
-//         }
-//       }
-
-//       &-box {
-//         width: 95%;
-//         display: flex;
-//         flex-direction: column;
-//         gap: 25px 0px;
-//         font-size: 23px;
-//         @include mobile {
-//           font-size: 18px;
-//         }
-
-//         &-content-first {
-//           animation: fadeUp 1s ease;
-//         }
-
-//         &-content-second {
-//           animation: fadeUp 1.5s ease;
-//         }
-
-//         &-content-third {
-//           animation: fadeUp 2s ease;
-//         }
-//       }
-//     }
-
-//     &-bio {
-//       display: flex;
-//       flex-direction: column;
-//       gap: 50px 0px;
-//       padding: 0px 25px;
-
-//       @include mobile {
-//         width: 100%;
-//         padding: 0 10px;
-//       }
-
-//       @include tablet {
-//         width: 100%;
-//         padding: 0 10px;
-//       }
-
-//       &-title {
-//         font-size: 41px;
-//         border-bottom: 1px solid #fc0;
-//         animation: fadeDown 1s ease;
-//         @include mobile {
-//           font-size: 35px;
-//         }
-//       }
-
-//       &-box {
-//         width: 95%;
-//         display: flex;
-//         flex-direction: column;
-//         gap: 25px 0px;
-//         font-size: 23px;
-//         @include mobile {
-//           font-size: 18px;
-//         }
-
-//         &-content-first {
-//           animation: fadeUp 1s ease;
-//         }
-
-//         &-content-second {
-//           animation: fadeUp 1.5s ease;
-//         }
-
-//         &-content-third {
-//           animation: fadeUp 2s ease;
-//         }
-//       }
-//     }
-//   }
-// }

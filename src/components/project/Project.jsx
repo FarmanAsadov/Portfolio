@@ -1,8 +1,8 @@
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { projects } from "../../utils/projects";
 import "./project.scss";
-import { useState } from "react";
-import { useTranslation } from "react-i18next";
 
 function Project() {
   const [data, setData] = useState(projects);

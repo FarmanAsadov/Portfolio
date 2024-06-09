@@ -13,6 +13,7 @@
     border-top: 1px solid #e0e0e0;
     display: flex;
     justify-content: space-between;
+
     @include mobile {
       flex-direction: column !important;
       align-items: center !important;
@@ -23,6 +24,7 @@
     &-direction {
       display: flex;
       gap: 0 20px;
+
       &-link {
         &:hover {
           text-shadow: 1px 1px 2px #d6a213, 0 0 1em #d6a213, 0 0 0.2em #d6a213;

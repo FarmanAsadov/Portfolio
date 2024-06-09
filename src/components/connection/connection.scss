@@ -9,12 +9,14 @@
   margin: 0 auto;
   gap: 30px 0;
   height: 800px;
+
   @include mobile {
     width: 100% !important;
     padding: 100px 20px 35px 20px !important;
     gap: 20px 0 !important;
     height: 830px !important;
   }
+
   &-title {
     color: #fc0;
     font-size: 36px;
@@ -22,16 +24,19 @@
       color: #fff;
     }
   }
+
   &-description {
     width: 80%;
     font-size: 25px;
     text-align: center;
     line-height: 40px;
+
     @include mobile {
       width: 100% !important;
       font-size: 17px !important;
     }
   }
+
   &-form {
     width: 100%;
     display: flex;
@@ -39,10 +44,12 @@
     align-items: center;
     gap: 10px 0;
     padding-top: 50px;
+
     @include mobile {
       padding: 5px !important;
       gap: 10px !important;
     }
+
     &-inp {
       border: none;
       border-bottom: 2px solid #fc0;
@@ -52,6 +59,7 @@
       color: #fff;
       text-indent: 5px;
       padding: 0 0 5px 0;
+
       @include mobile {
         width: 100% !important;
       }
@@ -76,6 +84,7 @@
       cursor: pointer;
       transition: 0.5s ease-in-out;
       font-weight: 600;
+
       @include mobile {
         width: 100%;
       }
@@ -83,98 +92,10 @@
   }
 }
 
-// .connection {
-//   width: 80%;
-//   display: flex;
-//   align-items: center;
-//   flex-direction: column;
-//   padding: 50px 40px;
-//   margin: 0 auto;
-//   gap: 30px 0;
-//   @include mobile {
-//     width: 100% !important;
-//     padding: 100px 20px 35px 20px !important;
-//     gap: 20px 0 !important;
-//     height: 830px !important;
-//   }
-
-//   &-title {
-//     color: #fc0;
-//     &-point {
-//       color: #fff;
-//     }
-//   }
-//   &-description {
-//     width: 70%;
-//     font-size: 24px;
-//     text-align: center;
-//     line-height: 40px;
-//     @include mobile {
-//       width: 100% !important;
-//       font-size: 17px !important;
-//     }
-//   }
-//   &-form {
-//     width: 100%;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     gap: 10px 0;
-//     padding-top: 50px;
-//     @include mobile {
-//       padding: 5px !important;
-//       gap: 10px !important;
-//     }
-
-//     &-inp {
-//       border: none;
-//       border-bottom: 2px solid #fc0;
-//       width: 60%;
-//       font-size: 20px;
-//       outline: none;
-//       color: #fff;
-//       text-indent: 5px;
-//       padding: 0 0 5px 0;
-//       @include mobile {
-//         width: 100% !important;
-//       }
-
-//       &::placeholder {
-//         color: #fff;
-//       }
-//       &:-webkit-autofill {
-//         -webkit-box-shadow: 0 0 0 30px #000 inset;
-//         -webkit-text-fill-color: #fff;
-//       }
-//     }
-//     .textarea {
-//       height: 100px;
-//       resize: none;
-//     }
-//     &-btn {
-//       padding: 15px;
-//       border-radius: 18px;
-//       font-size: 17px;
-//       border: 2px solid #fc0;
-//       color: #fc0;
-//       cursor: pointer;
-//       transition: 0.5s ease-in-out;
-//       font-weight: 600;
-//       @include mobile {
-//         width: 100% !important;
-//       }
-
-//       &:hover {
-//         background-color: #fc0 !important;
-//         color: #000;
-//       }
-//     }
-//   }
-// }
-
 .validations {
   width: 70%;
   height: 30px;
+
   @include mobile {
     width: 100% !important;
   }

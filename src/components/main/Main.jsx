@@ -1,8 +1,7 @@
-// import { ReactTyped } from "react-typed";
+import { useTranslation } from "react-i18next";
+import TypeWriter from "../typewriter/TypeWriter";
 import user from "../../assets/images/myPhoto.png";
 import "./main.scss";
-import TypeWriter from "../typewriter/TypeWriter";
-import { useTranslation } from "react-i18next";
 
 function Main() {
   const { t } = useTranslation();

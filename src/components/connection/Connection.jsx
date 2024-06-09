@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import "./connection.scss";
-import emailjs from "@emailjs/browser";
 import { useTranslation } from "react-i18next";
+import emailjs from "@emailjs/browser";
+import "./connection.scss";
 
 function Connection() {
   const [disabled, setDisabled] = useState(true);

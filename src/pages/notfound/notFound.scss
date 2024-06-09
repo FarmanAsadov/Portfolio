@@ -10,6 +10,7 @@
   div {
     width: 100% !important;
     height: 900px;
+
     @include mobile {
       height: 85vh !important;
     }

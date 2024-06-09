@@ -6,6 +6,7 @@
 #header {
   width: 100%;
   padding: 15px;
+
   @include mobile {
     padding: 5px;
   }
@@ -16,14 +17,13 @@
     z-index: 11;
   }
 
-  // overflow: hidden;
-
   .navigate {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 10px 0px 0px;
+
     @include mobile {
       padding: 0;
     }
@@ -36,6 +36,7 @@
       &-img {
         width: 50px;
         object-fit: cover;
+
         @include mobile {
           width: 35px;
         }
@@ -47,6 +48,7 @@
         padding-top: 40px;
         left: -20px;
         background-color: transparent;
+
         @include mobile {
           padding-top: 30px;
         }
@@ -62,6 +64,7 @@
       align-items: center;
       gap: 0px 10px;
       animation: fadeLeft 1s ease;
+
       @include mobile {
         width: 80%;
         height: 60px;
@@ -70,13 +73,13 @@
         right: -100%;
         font-size: 13px;
         background: #000;
-        // padding: 10px 0px 10px 0px;
         transition: all 0.7s ease-in-out;
         gap: 0 5px;
       }
 
       &-link {
         font-size: 18px;
+
         @include mobile {
           font-size: 16px;
         }
@@ -97,23 +100,23 @@
         background-color: #fc0;
         color: #fff;
         margin-left: 20px;
+
         @include mobile {
           margin-left: 5px;
         }
       }
     }
-
     &-menu {
       display: none;
       width: 40px;
       height: 40px;
+
       @include mobile {
         display: block;
       }
     }
   }
 }
-
 // active link
 .active {
   text-shadow: 1px 1px 2px #d6a213, 0 0 1em #d6a213, 0 0 0.2em #d6a213;

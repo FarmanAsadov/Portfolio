@@ -1,4 +1,3 @@
-import "./ability.scss";
 import html from "/icon/html.svg";
 import css from "/icon/css.svg";
 import js from "/icon/javascript.svg";
@@ -12,6 +11,7 @@ import git from "/icon/git-icon.svg";
 import github from "/icon/github-icon.svg";
 import sass from "/icon/sass.svg";
 import bootstrap from "/icon/bootstrap-5.svg";
+import "./ability.scss";
 
 function Ability() {
   return (

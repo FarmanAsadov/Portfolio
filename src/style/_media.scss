@@ -277,6 +277,11 @@
   .words-info {
     font-size: 20px !important;
   }
+  .loader {
+    div {
+      height: 90vh !important;
+    }
+  }
 }
 @media (max-width: 380px) {
   .navigate-direction-link {
