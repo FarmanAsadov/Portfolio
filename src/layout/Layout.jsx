@@ -12,7 +12,7 @@ function Layout() {
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
-      setLoading(true);
+      setLoading(false);
     }, 3000);
   }, [location.pathname]);
 
