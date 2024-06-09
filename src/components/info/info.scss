@@ -23,7 +23,7 @@
     animation: fadeRight 1s ease;
 
     @include mobile {
-      width: 80%;
+      width: 80% !important;
     }
   }
 
