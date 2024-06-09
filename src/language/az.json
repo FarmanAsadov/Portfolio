@@ -29,8 +29,8 @@
   "Enter an email": "E-poçtunuzu daxil edin",
   "Enter a message": "Mesajınızı daxil edin",
   "First name must contain only letters": "Ad yalnız hərflərdən ibarət olmalıdır",
-  "First name must be at least 3 characters": "Ad ən az 3 simvoldan ibarət olmalıdır",
+  "Name must be at least 3 characters long": "Ad ən az 3 simvoldan ibarət olmalıdır",
   "Invalid email address": "Yanlış e-poçt ünvanı",
-  "Message must be at least 10 characters": "Mesaj ən az 10 simvoldan ibarət olmalıdır",
+  "Message must be at least 10 characters long": "Mesaj ən az 10 simvoldan ibarət olmalıdır",
   "SUBMIT": "GÖNDƏR"
 }

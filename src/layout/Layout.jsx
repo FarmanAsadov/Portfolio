@@ -1,26 +1,3 @@
-// import { Outlet } from "react-router-dom";
-// import Header from "../shared/header/Header";
-// import Footer from "../shared/footer/Footer";
-// import "./layout.scss";
-// import { useState } from "react";
-
-// function Layout() {
-
-//   const [loading, setLoading] = useState(false);
-
-//   return (
-//     <>
-//       <Header />
-//       <div className="outlet">
-//         <Outlet />
-//       </div>
-//       <Footer />
-//     </>
-//   );
-// }
-
-// export default Layout;
-
 import { Outlet, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Header from "../shared/header/Header";
@@ -44,11 +21,9 @@ function Layout() {
       {loading ? (
         <Loading />
       ) : (
-        <div>
+        <div className="layout">
           <Header />
-          <div className="outlet">
-            <Outlet />
-          </div>
+          <Outlet />
           <Footer />
         </div>
       )}

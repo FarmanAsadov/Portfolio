@@ -1,22 +1,25 @@
 @import "../../style/_mixins.scss";
 #footer {
+  width: 100%;
   display: flex;
   justify-content: center;
   position: relative;
   bottom: 0;
+  background-color: #000;
 
   .content {
     width: 85%;
-    padding: 40px 0 0 0;
+    padding: 40px 0 40px 0;
     border-top: 1px solid #e0e0e0;
     display: flex;
     justify-content: space-between;
     @include mobile {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px 0;
-      padding: 20px 0 20px 0;
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 20px 0 !important;
+      padding: 20px 0 20px 0 !important;
     }
+
     &-direction {
       display: flex;
       gap: 0 20px;

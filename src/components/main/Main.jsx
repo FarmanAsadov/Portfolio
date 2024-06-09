@@ -9,7 +9,7 @@ function Main() {
   return (
     <div id="main">
       <div className="words">
-        <h1 className="words-content">Hello</h1>
+        <h1 className="words-content">{t("Hello")}</h1>
         <h1 className="words-name">
           {t("I am")} <TypeWriter />
         </h1>

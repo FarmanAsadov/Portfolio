@@ -1,9 +1,7 @@
 @import "../style/_mixins.scss";
 
-.outlet {
-  height: 800px;
-
+.layout {
   @include mobile {
-    height: 100%;
+    -webkit-tap-highlight-color: transparent;
   }
 }

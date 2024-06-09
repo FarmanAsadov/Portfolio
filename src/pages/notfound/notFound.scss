@@ -1,3 +1,4 @@
+@import "../../style/_mixins.scss";
 .notFound {
   width: 100%;
   height: 100%;
@@ -8,6 +9,9 @@
 
   div {
     width: 100% !important;
-    height: 720px !important;
+    height: 900px;
+    @include mobile {
+      height: 85vh !important;
+    }
   }
 }

@@ -1,5 +1,6 @@
 @import "../../style/_animations.scss";
 @import "../../style//_mixins.scss";
+@import "../../style/_media.scss";
 
 // styles for header
 #header {
@@ -76,6 +77,9 @@
 
       &-link {
         font-size: 18px;
+        @include mobile {
+          font-size: 16px;
+        }
 
         &:hover {
           text-shadow: 1px 1px 2px #d6a213, 0 0 1em #d6a213, 0 0 0.2em #d6a213;

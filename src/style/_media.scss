@@ -1,0 +1,296 @@
+//for TV-screen responsiveness
+@media (max-width: 1920px) {
+  .project {
+    height: 800px;
+  }
+}
+
+//for desktop responsiveness
+@media (max-width: 1710px) {
+  #main {
+    height: 790px;
+  }
+  .info {
+    height: 790px;
+  }
+  .info-container-about-title {
+    font-size: 35px;
+  }
+  .info-container-bio-title {
+    font-size: 35px;
+  }
+  .info-container-about-box {
+    font-size: 22px;
+  }
+  .info-container-bio-box {
+    font-size: 22px;
+  }
+  .ability {
+    height: 790px;
+  }
+  .ability-first {
+    width: 55%;
+  }
+  .ability-second {
+    width: 78%;
+    margin-top: -120px;
+  }
+  .ability-third {
+    width: 55%;
+    margin-top: -115px;
+  }
+  .ability-fourth {
+    width: 32%;
+    margin-top: -110px;
+  }
+  .ability-fifth {
+    width: 9%;
+    margin-top: -100px;
+  }
+  .project {
+    height: 790px;
+  }
+
+  .project-filter {
+    top: 75px;
+  }
+  .connection {
+    height: 790px;
+  }
+}
+
+//for laptop responsiveness
+@media (max-width: 1536px) {
+  #main {
+    height: 535px;
+  }
+  .info {
+    height: 535px;
+    padding-top: 50px;
+  }
+  .info-container-about-title {
+    font-size: 30px;
+  }
+  .info-container-bio-title {
+    font-size: 30px;
+  }
+  .info-container-about-box {
+    font-size: 18px;
+  }
+  .info-container-bio-box {
+    font-size: 18px;
+  }
+  .ability {
+    height: 535px;
+    align-items: none;
+    padding-top: 30px;
+  }
+  .ability-first {
+    width: 42%;
+  }
+  .ability-second {
+    width: 60%;
+    margin-top: -80px;
+  }
+  .ability-third {
+    width: 42%;
+    margin-top: -80px;
+  }
+  .ability-fourth {
+    width: 24.2%;
+    margin-top: -75px;
+  }
+  .ability-fifth {
+    width: 6.3%;
+    margin-top: -67px;
+  }
+  .hexagon {
+    width: 90px;
+    height: 140px;
+    border-radius: 14px;
+    img {
+      width: 50px;
+    }
+  }
+  .project {
+    height: 535px;
+  }
+
+  .connection {
+    height: 535px;
+    padding: 0;
+    gap: 10px;
+  }
+  .connection-title {
+    font-size: 35px;
+  }
+
+  .connection-description {
+    font-size: 18px;
+    line-height: 30px;
+    width: 65%;
+  }
+
+  .connection-form {
+    padding: 10px 5px 5px 5px;
+  }
+  .loader {
+    div {
+      height: 95vh !important;
+    }
+  }
+  .notFound {
+    div {
+      height: 700px !important;
+    }
+  }
+}
+
+//for tablet responsiveness
+@media (max-width: 768px) {
+  #main {
+    height: 830px;
+    flex-direction: column;
+    gap: 45px 0;
+    padding-top: 20px;
+  }
+  .words {
+    width: 100% !important;
+    text-align: start;
+    padding-top: 0px;
+  }
+  .container {
+    width: 40% !important;
+  }
+
+  .info {
+    height: 90%;
+    flex-direction: column;
+    gap: 40px 0px;
+    padding: 50px 30px 50px 30px !important;
+  }
+  .info-image {
+    width: 40%;
+  }
+  .info-container {
+    flex-direction: column;
+    gap: 40px 0px;
+  }
+  .info-container-about {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .info-container-about-title {
+    font-size: 35px;
+  }
+  .info-container-about-box {
+    font-size: 19px;
+  }
+  .info-container-bio {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .info-container-bio-title {
+    font-size: 35px;
+  }
+  .info-container-bio-box {
+    font-size: 19px;
+  }
+  #footer .content {
+    padding: 40px 0 10px 0;
+  }
+  .ability {
+    height: 830px;
+  }
+  .hexagon {
+    width: 85px;
+    height: 113px;
+    border-radius: 1.45em;
+    img {
+      width: 60px;
+    }
+  }
+  .ability-first {
+    width: 70%;
+  }
+  .ability-second {
+    margin-top: -67px;
+    width: 99%;
+  }
+  .ability-third {
+    width: 70%;
+    margin-top: -65px;
+  }
+  .ability-fourth {
+    width: 41%;
+    margin-top: -62px;
+  }
+  .ability-fifth {
+    margin-top: -55px;
+    width: 12%;
+  }
+  .project {
+    height: 830px;
+  }
+  .project-container-box {
+    width: 35% !important;
+  }
+  .project-container-logo {
+    width: 20% !important;
+  }
+  .connection {
+    width: 100%;
+    padding: 65px 20px 35px 20px;
+    gap: 20px 0;
+    height: 830px;
+  }
+
+  .connection-description {
+    width: 100%;
+    font-size: 20px;
+  }
+  .connection-form {
+    padding: 30px 5px 5px 5px;
+    gap: 30px;
+  }
+  .connection-form-inp {
+    width: 100%;
+  }
+
+  .connection-form-btn {
+    width: 100%;
+  }
+  .validations {
+    width: 100%;
+  }
+}
+
+//for mobile responsiveness
+@media (max-width: 425px) {
+  .navigate-direction-link {
+    font-size: 14px !important;
+  }
+
+  .words-name {
+    font-size: 40px !important;
+  }
+  .words-info {
+    font-size: 20px !important;
+  }
+}
+@media (max-width: 380px) {
+  .navigate-direction-link {
+    font-size: 13.5px !important;
+  }
+}
+@media (max-width: 365px) {
+  .navigate-direction-link {
+    font-size: 12.5px !important;
+  }
+  .words-name {
+    font-size: 35px !important;
+  }
+  .words-info {
+    font-size: 20px !important;
+  }
+}

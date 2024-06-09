@@ -29,8 +29,8 @@
   "Enter an email": "Введите электронную почту",
   "Enter a message": "Введите сообщение",
   "First name must contain only letters": "Имя должно содержать только буквы",
-  "First name must be at least 3 characters": "Имя должно содержать не менее 3 символов",
+  "Name must be at least 3 characters long": "Имя должно содержать не менее 3 символов",
   "Invalid email address": "Неверный адрес электронной почты",
-  "Message must be at least 10 characters": "Сообщение должно содержать не менее 10 символов",
+  "Message must be at least 10 characters long": "Сообщение должно содержать не менее 10 символов",
   "SUBMIT": "ОТПРАВИТЬ"
 }

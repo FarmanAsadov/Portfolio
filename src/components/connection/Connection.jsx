@@ -119,7 +119,7 @@ function Connection() {
             placeholder={t("Enter a name")}
           />
           <div className="validations">
-            <p className="validations-validation">{nameError}</p>
+            <p className="validations-validation">{t(nameError)}</p>
           </div>
           <input
             className="connection-form-inp"
@@ -131,7 +131,7 @@ function Connection() {
             placeholder={t("Enter an email")}
           />
           <div className="validations">
-            <p className="validations-validation">{emailError}</p>
+            <p className="validations-validation">{t(emailError)}</p>
           </div>
           <textarea
             className="connection-form-inp textarea"
@@ -142,7 +142,7 @@ function Connection() {
             placeholder={t("Enter a message")}
           />
           <div className="validations">
-            <p className="validations-validation">{textAreaError}</p>
+            <p className="validations-validation">{t(textAreaError)}</p>
           </div>
           <button
             disabled={disabled}

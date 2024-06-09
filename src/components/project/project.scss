@@ -1,25 +1,35 @@
+@import "../../style/_mixins.scss";
+@import "../../style/_media.scss";
+
 .project {
   width: 85%;
-  height: 100%;
   margin: 0 auto;
-  padding: 80px 0px;
   overflow: hidden scroll;
   display: flex;
   flex-direction: column;
+  padding: 80px 0 30px;
   gap: 30px 0px;
-  // position: relative;
-
+  @include mobile {
+    padding: 100px 0 30px 0 !important;
+    width: 100% !important;
+    height: 830px !important;
+  }
   &-filter {
     width: 100%;
     height: 7%;
     display: flex;
     align-items: center;
     position: fixed;
-    top: 80px;
+    top: 90px;
     z-index: 1;
     margin: 0 auto;
     gap: 0px 10px;
-    padding-top: 20px;
+    @include mobile {
+      top: 63px !important;
+      height: 4% !important;
+      justify-content: center !important;
+      align-items: center !important;
+    }
     &-btn {
       width: 80px;
       height: 30px;
@@ -30,23 +40,25 @@
       background: #fff;
       cursor: pointer;
       transition: 0.5s ease-in-out;
-
+      @include mobile {
+        width: 75px;
+      }
       &:hover {
         letter-spacing: 0.5px;
       }
     }
   }
-
   &::-webkit-scrollbar {
     display: none;
   }
-
   &-container {
     display: flex;
     width: 100%;
     height: 200px;
-
     justify-content: space-between;
+    @include mobile {
+      padding: 0 20px !important;
+    }
 
     &-box {
       width: 20%;
@@ -59,29 +71,189 @@
       padding: 15px;
       gap: 20px 0px;
       transition: 1s ease-in-out;
-      filter: grayscale(100%);
+      @include mobile {
+        width: 55% !important;
+      }
 
+      filter: grayscale(100%);
       &:hover {
         filter: grayscale(0%);
       }
-
       &-image {
-        width: 230px;
-        // width: 100%;
-        // height: 100%;
-        height: 135px;
+        // width: 230px;
+        width: 100%;
+        // height: 90%;
+        height: 130px;
         object-fit: contain;
         border-radius: 0px 10px 0px 10px;
         animation: clip 1s ease;
+        @include mobile {
+          width: 100% !important;
+          height: 100px !important;
+        }
+      }
+      &-link {
       }
     }
-
     &-logo {
       width: 10%;
       height: 100%;
+      @include mobile {
+        width: 25% !important;
+        object-fit: contain !important;
+      }
     }
   }
 }
+
+// .project {
+//   width: 85%;
+//   margin: 0 auto;
+//   padding: 80px 0px;
+//   overflow: hidden scroll;
+//   display: flex;
+//   flex-direction: column;
+//   gap: 30px 0px;
+//   // position: relative;
+//   @include mobile {
+//     padding: 100px 0 30px 0 !important;
+//     width: 100% !important;
+//     height: 839px;
+//   }
+//   @include tablet {
+//     padding: 70px 5px 30px 5px;
+//     width: 100%;
+//     height: 828px;
+//   }
+
+//   &-c {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 20px 0;
+//     @include tablet {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       gap: 30px;
+//     }
+//   }
+
+//   &-filter {
+//     width: 100%;
+//     height: 7%;
+//     display: flex;
+//     align-items: center;
+//     position: fixed;
+//     top: 90px;
+//     z-index: 1;
+//     margin: 0 auto;
+//     gap: 0px 10px;
+//     // padding-top: 20px;
+//     @include mobile {
+//       top: 60px !important;
+//       height: 6% !important;
+//       justify-content: center !important;
+//       align-items: center !important;
+//     }
+//     &-btn {
+//       width: 80px;
+//       height: 30px;
+//       border: none;
+//       border-radius: 10px;
+//       font-size: 20px;
+//       color: #000;
+//       background: #fff;
+//       cursor: pointer;
+//       transition: 0.5s ease-in-out;
+//       // @include mobile {
+//       //   width: 75px;
+//       // }
+
+//       &:hover {
+//         letter-spacing: 0.5px;
+//       }
+//     }
+//   }
+
+//   &::-webkit-scrollbar {
+//     display: none;
+//   }
+
+//   &-container {
+//     display: flex;
+//     width: 100%;
+//     height: 200px;
+//     justify-content: space-between;
+//     @include mobile {
+//       align-items: center !important;
+//       padding: 0 20px !important;
+//     }
+//     @include tablet {
+//       align-items: center;
+//       padding: 0 20px;
+//     }
+//     &-box {
+//       width: 20%;
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       border: 2px solid #fff;
+//       border-radius: 0px 20px 0px 20px;
+//       box-shadow: 0px 0px 10px 0px #fc0;
+//       padding: 15px;
+//       gap: 20px 0px;
+//       transition: 1s ease-in-out;
+//       filter: grayscale(100%);
+//       @include mobile {
+//         width: 55% !important;
+//       }
+//       @include tablet {
+//         width: 40%;
+//       }
+
+//       &:hover {
+//         filter: grayscale(0%);
+//       }
+
+//       &-image {
+//         width: 230px;
+//         // width: 100%;
+//         // height: 100%;
+//         height: 135px;
+//         object-fit: contain;
+//         border-radius: 0px 10px 0px 10px;
+//         animation: clip 1s ease;
+//         @include mobile {
+//           width: 100% !important;
+//           height: 100px !important;
+//         }
+//         @include tablet {
+//           width: 100%;
+//           height: 100px;
+//         }
+//       }
+//       &-link {
+//         @include mobile {
+//           font-size: 14px;
+//         }
+//       }
+//     }
+
+//     &-logo {
+//       width: 10%;
+//       height: 100%;
+
+//       @include mobile {
+//         width: 30% !important;
+//         object-fit: contain !important;
+//       }
+//       @include tablet {
+//         width: 25%;
+//         object-fit: contain;
+//       }
+//     }
+//   }
+// }
 
 .blue {
   color: #fff;
