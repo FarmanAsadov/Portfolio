@@ -42,7 +42,7 @@ function Info() {
                 {t("Email")}: <span>esedovferman2005@gmail.com</span>
               </p>
               <p className="info-container-bio-box-content-second">
-                {t("Phone")}: <span>+994 70-306-62-24</span>
+                {t("Phone")}: <span>+994 51-989-41-13</span>
               </p>
               <p className="info-container-bio-box-content-third">
                 {t("Address")}: <span>Baku, Azerbaijan</span>
